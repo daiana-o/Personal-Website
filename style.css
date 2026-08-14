@@ -13,15 +13,16 @@ body {
 
 /* Navigation bar */
 nav {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 30px;
     padding: 20px 40px;
 
     position: sticky;
     top: 0;
     z-index: 1000;
+
     background-color: white;
 }
 
@@ -41,17 +42,22 @@ nav {
     justify-content: flex-end;
 }
 
-/* Navigation buttons */
-nav button {
+/* Matching left and right navigation buttons */
+.nav-left button,
+.nav-right button {
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
+
+    background-color: #eeeeee;
+    color: inherit;
 
     font-size: 16px;
     cursor: pointer;
 }
 
-nav button:hover {
+.nav-left button:hover,
+.nav-right button:hover {
     background-color: #cccccc;
 }
 
@@ -94,12 +100,14 @@ body.dark-mode nav {
     background-color: #1f1f1f;
 }
 
-body.dark-mode nav button {
+body.dark-mode .nav-left button,
+body.dark-mode .nav-right button {
     color: white;
     background-color: #333333;
 }
 
-body.dark-mode nav button:hover {
+body.dark-mode .nav-left button:hover,
+body.dark-mode .nav-right button:hover {
     background-color: #555555;
 }
 

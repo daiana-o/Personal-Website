@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daiana O. | Software Engineer</title>
+    <title>Daiana O | Software Engineer</title>
+    <link rel="icon" type="image/png" href="images/swe.png">
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -13,9 +14,15 @@
 
     <nav>
     <div class="nav-left">
-        <button id="github">GitHub</button>
-        <button id="linkedin">LinkedIn</button>
-        <button id="resume">Resume</button>
+        <a href="https://github.com/daiana-o">
+            <button id="github">GitHub</button>
+        </a>
+        <a href="https://www.linkedin.com/in/daiana-ortiz21/">
+            <button id="linkedin">LinkedIn</button>
+        </a>
+        <a href="">
+            <button id="resume">Resume</button>
+        </a>
     </div>
 
     <header>
@@ -26,16 +33,26 @@
     </header>
 
     <div class="nav-right">
-        <button id="home">Home</button>
-        <button id="projects">Projects</button>
-        <button id="activities">Activities</button>
-        <button id="darkmode">🌙</button>
+        <button id="home" onclick="window.location.href='index.html'">
+            Home
+        </button>
+
+        <button id="projects" onclick="window.location.href='projects.html'">
+            Projects
+        </button>
+
+        <button id="activities" onclick="window.location.href='activities.html'">
+            Activities
+        </button>
+
+        <button id="darkmode" type="button">🌙</button>
     </div>
+
 </nav>
     
 
     <footer>
-        <p>© Daiana O. | All rights reserved.</p>
+        <p>© 2026 Daiana O | All rights reserved.</p>
     </footer>
     
 </body>
