@@ -79,9 +79,13 @@ header h1 span {
 
 /* Footer */
 footer {
-    margin-top: auto;
-    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 
+    padding: 20px;
+    box-sizing: border-box;
     text-align: center;
     background-color: #eeeeee;
 }
