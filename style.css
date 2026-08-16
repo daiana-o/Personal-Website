@@ -118,4 +118,41 @@ body.dark-mode footer {
 
 /* CSS file for projects below */
 
+
+.projects-page {
+    width: min(900px, calc(100% - 40px));
+    margin: 50px auto;
+}
+
+.project {
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+.project h2 {
+    margin: 0 0 8px;
+}
+
+.project h4 {
+    margin: 0 0 15px;
+    color: #666666;
+}
+
+.project p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+body.dark-mode .project {
+    background-color: #242424;
+}
+
+body.dark-mode .project h4 {
+    color: #bbbbbb;
+}
+
+
+
 /* CSS file for activities below */

@@ -3,88 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daiana O | Projects</title>
 
+    <title>Daiana O | Projects</title>
+    <link rel="icon" type="image/png" href="images/swe.png">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
     <nav>
-    <div class="nav-left">
-        <a href="https://github.com/daiana-o">
-            <button id="github">GitHub</button>
-        </a>
-        <a href="https://www.linkedin.com/in/daiana-ortiz21/">
-            <button id="linkedin">LinkedIn</button>
-        </a>
-        <a href="files/resume.pdf">
-            <button id="resume">Resume</button>
-        </a>
-    </div>
+        <div class="nav-left">
+            <a href="https://github.com/daiana-o" target="_blank">
+                <button type="button">GitHub</button>
+            </a>
 
-    <div class="nav-right">
-        <button id="home" onclick="window.location.href='index.html'">
-            Home
-        </button>
+            <a href="https://www.linkedin.com/in/daiana-ortiz21/" target="_blank">
+                <button type="button">LinkedIn</button>
+            </a>
 
-        <button id="projects" onclick="window.location.href='projects.html'">
-            Projects
-        </button>
+            <a href="files/resume.pdf" target="_blank">
+                <button type="button">Resume</button>
+            </a>
+        </div>
 
-        <button id="activities" onclick="window.location.href='activities.html'">
-            Activities
-        </button>
+        <header>
+            <h1>
+                Daiana Ortiz<br>
+                <span>Projects</span>
+            </h1>
+        </header>
 
-        <button id="darkmode" type="button">🌙</button>
-    </div>
+        <div class="nav-right">
+            <button type="button" onclick="window.location.href='index.html'">
+                Home
+            </button>
 
+            <button type="button" onclick="window.location.href='projects.html'">
+                Projects
+            </button>
 
-    <h1>Projects</h1>
+            <button type="button" onclick="window.location.href='activities.html'">
+                Activities
+            </button>
 
-    <h2>Netflix User Viewing Behavior Analysis</h2>
-        <h4>Data Science <br></h4>
-        <p>
-            Analyzed Netflix user viewing patterns using decision trees to classify viewing habits and linear regression to forecast watch-time
-            trends.Produced visualizations identifying peak engagement windows and content preference clusters across demographic segments
-            using Pandas and Matplotlib.
-        </p>
+            <button id="darkmode" type="button">🌙</button>
+        </div>
+    </nav>
 
-    <h2>Bike Sharing Demand Forecasting</h2>
-        <h4>Machine Learning <br></h4>
-        <p>
-            Trained a regression model on the UCI Bike Sharing dataset to predict hourly rental demand with feature engineering across
-            weather, seasonality, and time variables.
-            Evaluated model performance using RMSE and R² metrics; optimized predictive accuracy through iterative feature selection with
-            scikit-learn.
-        </p>
+    <main class="projects-page">
+        
 
-    <h2>Ransomware Risk & Mitigation — Business Presentation</h2>
-        <h4>Cybersecurity · CodePath<br></h4>
-        <p>
-            Produced an executive-level business presentation analyzing the modern ransomware threat landscape, financial impact, and
-            layered mitigation strategies.
-            Covered attack vectors, endpoint protection, backup strategies, and incident response playbooks tailored for non-technical
-            stakeholders.
-        </p>
-    
-    <h2>BookCon — Event Website</h2>
-        <h4>Web Development · CodePath<br></h4>
-        <p>
-            Built a fully responsive website for a fictional annual book convention featuring an event schedule, speaker lineup, and ticket
-            registration flow.
-            Implemented clean UI/UX design from scratch using HTML, CSS, and JavaScript with a focus on accessibility and mobile
-            responsiveness.
-        </p>
+        <section class="project">
+            <h2>Netflix User Viewing Behavior Analysis</h2>
+            <h4>Data Science</h4>
 
+            <p>
+                Analyzed Netflix user viewing patterns using decision trees to
+                classify viewing habits and linear regression to forecast
+                watch-time trends. Produced visualizations identifying peak
+                engagement windows and content-preference clusters across
+                demographic segments using Pandas and Matplotlib.
+            </p>
+        </section>
 
-        </nav>
-    
+        <section class="project">
+            <h2>Bike Sharing Demand Forecasting</h2>
+            <h4>Machine Learning</h4>
+
+            <p>
+                Trained a regression model on the UCI Bike Sharing dataset to
+                predict hourly rental demand using weather, seasonality, and
+                time features. Evaluated performance using RMSE and R² and
+                improved accuracy through iterative feature selection with
+                scikit-learn.
+            </p>
+        </section>
+
+        <section class="project">
+            <h2>Ransomware Risk &amp; Mitigation</h2>
+            <h4>Cybersecurity · CodePath</h4>
+
+            <p>
+                Produced an executive-level business presentation analyzing
+                ransomware threats, financial impact, and layered mitigation
+                strategies. Covered attack vectors, endpoint protection,
+                backup strategies, and incident-response plans for
+                non-technical stakeholders.
+            </p>
+        </section>
+
+        <section class="project">
+            <h2>BookCon — Event Website</h2>
+            <h4>Web Development · CodePath</h4>
+
+            <p>
+                Built a responsive website for a fictional annual book
+                convention featuring an event schedule, speaker lineup, and
+                ticket-registration flow. Created the interface with HTML,
+                CSS, and JavaScript with a focus on accessibility and mobile
+                responsiveness.
+            </p>
+        </section>
+    </main>
+
     <footer>
         <p>© 2026 Daiana O | All rights reserved.</p>
     </footer>
-    
-</body>
-</html>
+
 </body>
 </html>
